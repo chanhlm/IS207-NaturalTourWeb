@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color: #18991e;
+    --button-color: #2dc737;
+    --text-color: #585755;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f0e8;
+}
+
+/* header */
+header{
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-right: 50px;
+}
+
+.header--logo{
+    width: 30%;
+}
+
+.header--logo-img{
+    width: 75px;
+    height: 75px;
+}
+
+
+.header--logo-name{
+    font-size: 18px;
+}
+
+.header--logo-slogan{
+   font-size: 9px;
+   color: var(--text-color);
+}
+
+.header--contact{
+    text-align: right;
+    width: 100%;
+    
+}
+
+.header--contact-text{
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.header--contact-phone a{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header--contact-phone span{
+    color: var(--main-color);
+}
+
+.header--contact-phone a:hover{
+    color: var(--main-color);
+}
+
+
+.header--page-list{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header--page-list li{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.header--page-list li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 5px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.header--page-list .button-home{
+    color: #fff ;
+    background-color: var(--button-color);
+}
+
+.header--page-list li a:hover{
+    color: #fff ;
+    background-color: var(--button-color);
+}
+/* ------------------------------------------- */
+.header--nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.header--nav li{
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.header--nav a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+}
+
+.header--nav li:hover{
+    background-color: #ebe1d1;
+    color: #18991e;  
+}
+
+.header--nav li:hover a{
+    color: #18991e;  
+}
+
+/* section  */
+section{
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+
+.section--content{
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section--content .content-banner{
+    display: flex;
+    padding: 20px;
+}
+
+.content-banner .banner-img{
+    width: 70%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.content-banner .banner-text{
+    width: 30%;
+    padding-left: 50px;
+    background-color: #271c12;
+    border-radius: 0 10px 10px 0;
+    padding: 30px 30px;
+}
+
+.content-banner .banner-maintext{
+    font-size: 24px;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.content-banner .banner-maintext-span{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.content-banner .banner-subtext{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+.content-banner a{
+    color: #1814ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.content-banner .banner-button-img{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.content-banner .banner-button-img li{
+    margin: 0 12px;
+}
+
+.content-banner .banner-button-img li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    width: 21px!important;
+    height: 21px!important;
+    line-height: 21px!important;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    background-color: #6d6859;
+    border: 1px solid #37342e;
+    display: block;
+}
+
+/* ------sidebar---------- */
+.section--sidebar{
+    width: 25%;
+    background-color: #f3f2ec;
+}
+
+.section--sidebar .sidebar-holiday-search{
+    padding: 20px;
+}
+
+.section--sidebar .holiday-search-h1{
+    font-size: 18px;
+}
+
+.section--sidebar .holiday-search-text{
+    font-size: 15px;
+    color: #585755;
+    margin-top: 10px;
+}
+
+
+
+
