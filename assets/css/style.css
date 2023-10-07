@@ -259,6 +259,23 @@ section{
     margin-top: 10px;
 }
 
+.section--sidebar .holiday-search-button{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--button-color);
+    text-align: center;
+    border-radius: 10px ;
+}
+
+.section--sidebar .button-search{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
 
 
 
