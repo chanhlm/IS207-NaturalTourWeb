@@ -13,7 +13,7 @@ select {
 :root{
     --main-color: #18991e;
     --button-color: #2dc737;
-    --text-color: #585755;
+    --text-color: #999891;
     --border-color: #a8a8a8;
 }
 
@@ -319,10 +319,26 @@ section{
 
 .post-content img{
     width: 96%;
-    height: auto;
+    /* height: 135px; */
     border-radius: 10px;
     border: 4px solid var(--border-color);
 }
+
+.post-content .post-header {
+    padding: 10px 0;
+}
+
+.post-content .header-special,
+.post-content .post-header:hover{
+    color: var(--main-color);
+}
+
+.post-content .post-text{
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 24px;
+}
+
 
 
 /* ------sidebar---------- */
@@ -383,6 +399,106 @@ section{
     /* ??? chưa biết css như nào cho nó ra hình thoi  */
 }
 
+/* -------------footer --------------- */
+footer{
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 50px;
+    background-color: #fff;
+}
+
+footer .footer--header{
+    background-color: var(--text-color);
+    padding: 18px;
+    text-align: center;
+    /* width: 100%; */
+    border-radius: 10px 10px 0 0;
+}
+
+footer .footer--header p{
+    font-size: 16px;
+    color: #fff;
+    font-style: italic;
+}
+
+footer .footer--content {
+    display: flex;
+    padding: 20px;
+}
+
+.footer--content .content-contact{
+    width: 25%;
+}
+
+.content-contact p{
+    width: 90%;
+}
+
+.content-contact .button-contact{
+    background-color: var(--text-color);
+    text-align: center;
+    border-radius: 10px ;
+    padding: 6px;
+    margin-top: 20px;
+    border: 4px solid #d5cccc;
+    color: #fff;
+    font-weight: 600;
+    width: 80%;
+}
+
+.footer--content h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #6d6d66;
+}
+
+.footer--content .link-contact{
+    list-style: none;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.footer--content .infor-contact{
+    width: 25%;
+    margin-left: 60px;
+}
+
+.link-contact .link-col{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-col ul{
+    padding-right: 10px;
+    list-style: none;
+    /* margin-right: 120px; */
+}
+
+.link-col ul li{
+    margin-top: px;
+}
+
+.link-col ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+}
 
 
+.infor-contact a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+}
 
+.infor-contact p{
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.infor-contact p:last-child{
+    padding-top: 20px;
+    width: 50%;
+}
