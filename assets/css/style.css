@@ -423,7 +423,7 @@ section{
 
 .section--sidebar #search-box-button {
     padding: 6px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 20px;
     background-color: var(--button-color);
     text-align: center;
@@ -433,10 +433,14 @@ section{
     font-weight: 600;
 }
 
-
+.Quick-Search-Box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .section--sidebar #Search-text {
-    width: 60%;
+    width: 50%;
     height: 15px;
     border: 1px solid #ccc;
     font-size: 15px;
