@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+hr{
+    color: var(--border-color);
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -123,7 +127,7 @@ header{
 }
 
 .header--nav li{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-weight: 600;
 }
 
@@ -135,6 +139,7 @@ header{
     color: #fff;
     text-align: center;
     line-height: 38px;
+    padding: 0 20px;
 }
 
 .header--nav li:hover{
@@ -375,7 +380,7 @@ section{
 }
 
 .section--sidebar .holiday-search-button{
-    padding: 20px;
+    padding: 14px;
     margin-top: 20px;
     background-color: var(--button-color);
     text-align: center;
@@ -399,12 +404,165 @@ section{
     /* ??? chưa biết css như nào cho nó ra hình thoi  */
 }
 
+.section--sidebar .Sidebar-Quick-Search {
+    padding: 20px;
+    border-top-color: #a6a59d;
+    border-bottom-color: #a6a59d;
+
+}
+
+.section--sidebar .Quick-Search-h1 {
+    font-size: 18px;
+}
+
+.section--sidebar .Quick-Search-sub-content {
+    font-size: 15px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.section--sidebar #search-box-button {
+    padding: 6px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: var(--button-color);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #18991e;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+.section--sidebar #Search-text {
+    width: 60%;
+    height: 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    color: #585755;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*-----------------------SignUp-------------------------*/
+.section--sidebar .Sidebar-Newsletter-SignUp {
+    padding: 20px;
+    border-top-color: #a6a59d;
+    border-bottom-color: #a6a59d;
+}
+
+.section--sidebar .Newsletter-SignUp-h1 {
+    font-size: 18px;
+}
+
+.section--sidebar .Newsletter-SignUp-sub-content {
+    font-size: 15px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.section--sidebar #SignUp-text {
+    width: calc(100% - 10px) ;
+    height: 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    color: #585755;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.section--sidebar #SignUpName-text {
+    width: 60%;
+    height: 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    color: var(--text-color);
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.section--sidebar #SignUp-box-button {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: var(--button-color);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #18991e;
+    color: #fff;
+    font-weight: 600;
+}
+
+.SignUp-Email-Box div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*-------------------------------Latest News-----------------------*/
+.section--sidebar .Sidebar-Latest-News {
+    padding: 20px;
+    border-top-color: #a6a59d;
+    border-bottom-color: #a6a59d;
+}
+
+.section--sidebar .Latest-News-h1 {
+    font-size: 18px;
+}
+
+.Latest-News-A {
+    list-style: none;
+    text-decoration: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    margin-top: 5px;
+}
+
+.Title-text a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 10px;
+}
+
+.Latest-News-A .Title-text {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+}
+
+.Latest-News-A .Title-text::before {
+    text-decoration: none;
+    color: #000;
+}
+
+.Latest-News-A  a:hover {
+    color: var(--main-color);
+}
+.A-Content {
+    color:var(--text-color);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.Title-text .title-text-special{
+    color: var(--main-color);
+}
+
 /* -------------footer --------------- */
 footer{
     margin-left: 50px;
     margin-top: 25px;
     margin-right: 50px;
-    background-color: #fff;
+    
 }
 
 footer .footer--header{
@@ -424,6 +582,8 @@ footer .footer--header p{
 footer .footer--content {
     display: flex;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .footer--content .content-contact{
@@ -432,6 +592,7 @@ footer .footer--content {
 
 .content-contact p{
     width: 90%;
+    color: var(--text-color);
 }
 
 .content-contact .button-contact{
@@ -446,6 +607,22 @@ footer .footer--content {
     width: 80%;
 }
 
+.button-contact .contact-text{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.button-contact .contact-icon{
+    padding-left: 16px;
+    border-left: var(--border-color) 1px solid;
+    line-height: 100%;
+}
+
 .footer--content h2{
     font-size: 20px;
     padding-bottom: 10px;
@@ -456,18 +633,21 @@ footer .footer--content {
     list-style: none;
     width: 50%;
     padding-left: 30px;
+    border-left: var(--border-color) 1px solid;
+    border-right: var(--border-color) 1px solid;
+    padding-right: 20px;
 }
 
 .footer--content .infor-contact{
     width: 25%;
-    margin-left: 60px;
+    margin-left: 20px;
 }
 
 .link-contact .link-col{
     display: flex;
     list-style: none;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;;
 }
 
 .link-col ul{
@@ -477,7 +657,7 @@ footer .footer--content {
 }
 
 .link-col ul li{
-    margin-top: px;
+    margin-top: 5px;
 }
 
 .link-col ul li a{
@@ -502,3 +682,19 @@ footer .footer--content {
     padding-top: 20px;
     width: 50%;
 }
+
+.footer-copyright {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-copyright p:first-child{
+    /* color: var(--text-color); */
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.footer-copyright p:last-child{
+    color: var(--text-color);
+}
+
