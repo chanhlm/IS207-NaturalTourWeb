@@ -432,8 +432,8 @@ section{
 }
 
 .section--sidebar #search-box-button {
-    padding: 6px;
-    /* margin-top: 20px; */
+    padding: 4px;
+    margin-top: 10px;
     margin-left: 20px;
     background-image: var(--button-color);
     text-align: center;
@@ -500,7 +500,7 @@ section{
 }
 
 .section--sidebar #SignUp-box-button {
-    padding: 5px;
+    padding: 4px;
     margin-top: 10px;
     /* margin-left: 20px; */
     /* margin-right: 10px; */
