@@ -394,20 +394,42 @@ section{
 }
 
 .section--sidebar .holiday-search-button{
-    padding: 14px;
-    margin-top: 20px;
-    background-image: var(--button-color);
+    
+    margin: 0 20px;
+    /* margin-top: 20px; */
     text-align: center;
-    border-radius: 10px ;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .section--sidebar .button-search{
+    padding: 10px;
+    /* padding-bottom: 10px; */
+    /* height: 41.5px; */
+    background-image: var(--button-color);
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
-    padding: 4px;
-    color: #fff;
-    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    padding-left: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    line-height: 22px;
+}
+
+.section--sidebar .holiday-search-button::after {
+    position: absolute;
+    content: "";
+    right: -15px;
+    top: 5.5px;
+    width: 30px;
+    height: 30px;
+    background-image: var(--button-color);
+    border-radius: 2px;
+    transform: rotate(45deg);
+    z-index: -1;
+    cursor: pointer;
 }
 
 .button-search .icon{
