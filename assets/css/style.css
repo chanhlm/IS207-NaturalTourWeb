@@ -423,8 +423,8 @@ section{
     content: "";
     right: -15px;
     top: 5.5px;
-    width: 30px;
-    height: 30px;
+    width: 31px;
+    height: 31px;
     background-image: var(--button-color);
     border-radius: 2px;
     transform: rotate(45deg);
