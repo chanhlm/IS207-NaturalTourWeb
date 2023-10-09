@@ -222,7 +222,7 @@ section{
 }
 
 .banner-button-img .button-special{
-    background-img: var(--button-color)!important;
+    background-image: var(--button-color)!important;
 }
 
 .content-banner .banner-button-img li{
